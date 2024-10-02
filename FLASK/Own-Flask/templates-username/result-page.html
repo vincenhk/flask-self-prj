@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron container">
+        <p>Let see how you performed!!</p>
+        {% if result.__class__.__name__ == 'list' %}
+            <ol>
+                {% for msk in result %}
+                    <li>{{ msk }}</li>
+                {% endfor %}
+            </ol>
+        {% else %}
+            <p>Succes using this username : {{ result }}</p>
+        {% endif %}
+        <a href="{{ url_for("index") }}">Back</a>
+    </div>
+
+
+{% endblock %}

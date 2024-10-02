@@ -1,0 +1,14 @@
+Setting DB 
+
+Pip 
+- pip install flask_sqlalchmy
+- pip install falsk-migrate
+
+instalation folder migrate using 
+- flask --app your_app.py db init
+
+do commit message 
+- flask --app your_app.py db -m "Message Include"
+
+do push migrate
+- flask --app your_app.pu db upgrade

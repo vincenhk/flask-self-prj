@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome to the site mr.{{x}}</h1>
+<h1>{{slice}}</h1>
+<ul>
+    {% for a in slice %}
+        <li>{{ a }}</li>
+    {% endfor %}
+
+    {% block content %}
+        <h1>Masuk</h1>
+    {% endblock %}
+</ul>
+</body>
+</html>
